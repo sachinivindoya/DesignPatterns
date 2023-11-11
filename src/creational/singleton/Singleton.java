@@ -9,11 +9,11 @@ public class Singleton {
         private static Singleton instance;
 
         // Private constructor to prevent instantiation from outside the class
-        private Singleton() {
+        private Singleton() {  // wena thanaka idn object hadanna bariwenn thamai constructor ek private krnne
         }
 
         // Public method to get the instance of the Singleton class
-        public static Singleton getInstance() {
+        public static Singleton getInstance() { // global access point eka
             if (instance == null) {
                 instance = new Singleton();
             }
